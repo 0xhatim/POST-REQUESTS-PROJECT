@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+
+</header>
+
+<body > 
+
+
+    <form action="" method="POST">
+
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        {{ form.csrf_token() }}
+        <label for="text">username</label>
+        <input type="text" id="fname" name="username"><br><br>
+        <label for="password">password</label>
+        <input type="password" id="fname" name="password"><br><br>
+    
+        <input type="submit" value="Submit">
+      </form>
+
+
+
+
+</body>
+</html>
